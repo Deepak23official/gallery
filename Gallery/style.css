@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.d1{
+    height:200px;
+    width:17.3rem;
+    border-radius: 0px;
+ }
+ .hide{
+   display: none;
+ }
+ .inner{
+   overflow: hidden;
+ }
+ .inner img{
+   transition: all 1.0s ease;
+ }
+ .inner:hover img{
+   transform:scale(1.1)
+ }
+ .nav-item{
+     margin:10px;
+     border-radius: 20px;
+     border:1px solid blue;
+     height:40px;
+     line-height: 35px;
+     width:70px;
+ }
+ .nav-item:hover{
+     background-color: blue;
+     border-radius: 20px;
+     color:white;
+     cursor: pointer;
+ }
+ .card{
+     width:17.3rem;
+     border-radius: 0px;
+     border: none;
+     outline:none;
+ }
+ .p1{
+     width:60px;
+     background-color: blue;
+     color:white;
+ }
+ .f1{
+     margin-left:250px;
+ }
+ .g1{
+    margin-top:-10px;    
+ }
+ ul li{
+     list-style-type: none;
+ }
+
+ @keyframes animate{
+     0%{
+         transform: scale(0.5);
+     }
+     100%{
+         transform: scale(1);
+     }
+ }
+ .popup{
+   position:fixed;
+   top:0;
+   left:0;
+   height:100%;
+   width:100%;
+   background-color: transparent;
+   z-index:100;
+   display:none;
+ }
+ .popup span{
+   position:absolute;
+   top:70px;
+   right:330px;
+   font-size:40px;
+   font-weight: bolder;
+   color:black;
+   cursor: pointer;
+   z-index:100;
+ }
+ .popup img{
+   position: absolute;
+   top:50%;
+   left:50%;
+   transform: translate(-50%, -50%);
+   width:750px;
+   object-fit: cover;
+ }
+ @media (max-width:768px){
+   .popup img{
+     width:95%;
+   }
+ }
+ @media (max-width:100px){
+    .nav-item{
+      width:95%;
+    }
+  }
